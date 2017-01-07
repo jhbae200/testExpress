@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <table border="1">
+      <tr>
+        <% for(key in data[0]) { %>
+        <th><%=key%></th>
+        <% } %>
+      </tr>
+      <tr>
+        <% for(var i = 0; i < data.length; i++) { %>
+        <% for(key in data[i]) { %>
+        <td><%= data[i][key] %></td>
+        <% } %>
+        <% } %>
+      </tr>
+    </table>
+  </body>
+</html>
